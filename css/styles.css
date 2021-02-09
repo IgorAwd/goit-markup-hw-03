@@ -178,8 +178,7 @@ h6 {
 }
 
 /* advantages */
-
-.advantages {
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -223,11 +222,7 @@ h6 {
 /* activity */
 
 .activity {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-bottom: 94px;
 }
 
 .activity .activity-title {
@@ -256,6 +251,9 @@ h6 {
 }
 
 .team .team-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+
   color: var(--secondary-text-color);
 
   font-weight: 700;
@@ -264,7 +262,18 @@ h6 {
   text-align: center;
 }
 
+.team-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team .team-member {
+  margin-top: 30px;
+
   color: var(--secondary-text-color);
 
   font-weight: 500;
@@ -274,6 +283,9 @@ h6 {
 }
 
 .team-text {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -291,7 +303,15 @@ footer {
 }
 
 .comp-address {
+  padding-top: 20px;
+  padding-bottom: 9px;
+
   color: #ffffff;
+}
+
+.container.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 footer .address-link {
@@ -306,12 +326,29 @@ footer .address-link {
   line-height: 1.71;
 }
 
+.address-link.item {
+  padding-bottom: 9px;
+}
+
 /* page-portfolio */
 
+.portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.list-btn {
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+
   background-color: #f5f4fa;
   color: var(--secondary-text-color);
-
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -320,13 +357,31 @@ footer .address-link {
   letter-spacing: 0.03em;
 }
 
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
 
+.container.btn {
+  padding-bottom: 50px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
 .portfolio-title {
+  padding-top: 20px;
+  padding-bottom: 4px;
+
   color: var(--secondary-text-color);
 
   font-weight: 700;
@@ -338,4 +393,10 @@ footer .address-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
+}
+
+.examples {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
