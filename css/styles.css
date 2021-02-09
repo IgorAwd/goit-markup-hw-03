@@ -153,6 +153,8 @@ h6 {
 }
 
 .hero .hero-title {
+  margin-bottom: 30px;
+
   color: #ffffff;
 
   font-weight: 900;
@@ -178,6 +180,11 @@ h6 {
 }
 
 /* advantages */
+.advantages {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -196,11 +203,6 @@ h6 {
 
 .advantages-list > li {
   width: 270px;
-}
-
-.advantages {
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .advantages .advantages-title {
@@ -252,7 +254,7 @@ h6 {
 
 .team .team-title {
   padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   color: var(--secondary-text-color);
 
@@ -284,7 +286,7 @@ h6 {
 
 .team-text {
   margin-top: 10px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 
   font-weight: normal;
   font-size: 16px;
@@ -303,8 +305,8 @@ footer {
 }
 
 .comp-address {
-  padding-top: 20px;
-  padding-bottom: 9px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 
   color: #ffffff;
 }
@@ -326,8 +328,8 @@ footer .address-link {
   line-height: 1.71;
 }
 
-.address-link.item {
-  padding-bottom: 9px;
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* page-portfolio */
@@ -379,8 +381,7 @@ footer .address-link {
 }
 
 .portfolio-title {
-  padding-top: 20px;
-  padding-bottom: 4px;
+  margin-top: 20px;
 
   color: var(--secondary-text-color);
 
@@ -390,6 +391,8 @@ footer .address-link {
 }
 
 .portfolio-text {
+  margin-top: 4px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -399,4 +402,8 @@ footer .address-link {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
+}
+
+.portfolio-description {
+  padding: 20px 24px;
 }
